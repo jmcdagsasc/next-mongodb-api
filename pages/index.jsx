@@ -1,6 +1,7 @@
 import Head from "next/head";
 import ArticleList from "../components/ArticleList";
 import axios from "axios";
+import Link from "next/link";
 
 export default function Home({ articles }) {
   //console.log(articles);
@@ -12,6 +13,8 @@ export default function Home({ articles }) {
       </Head>
 
       <ArticleList articles={articles} />
+      <br />
+      <Link href="consulta">Datos de la API local</Link>
     </>
   );
 }
